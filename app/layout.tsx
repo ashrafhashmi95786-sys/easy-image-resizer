@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   keywords: ["image resizer", "photo compressor", "resize image to 20KB", "resize image to 50KB", "passport photo maker", "signature resizer", "JPG to PNG", "PNG to JPG"],
   openGraph: { type: "website", locale: "en_IN", url: siteUrl, siteName: "Easy Image Resizer", title: "Easy Image Resizer — Free Online Image Tools", description: "Resize and compress images privately in your browser." },
   robots: { index: true, follow: true },
+  other: {
+    "google-adsense-account": "ca-pub-3619322932821521",
+  },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en"><body>{children}</body></html>;
