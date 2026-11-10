@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+
 const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const googleAnalyticsId = "G-7TQEJWK2S2";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Easy Image Resizer — Free Online Image Tools", template: "%s | Easy Image Resizer" },
@@ -14,6 +18,26 @@ export const metadata: Metadata = {
     "google-adsense-account": "ca-pub-3619322932821521",
   },
 };
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', '${googleAnalyticsId}');
+          `}
+        </Script>
+      </body>
+    </html>
+  );
 }
