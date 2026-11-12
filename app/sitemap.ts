@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resize-image-to-20kb`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/resize-image-to-50kb`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/resize-image-to-100kb`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/image-compressor`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/passport-photo-resizer`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/signature-resizer`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/privacy-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
