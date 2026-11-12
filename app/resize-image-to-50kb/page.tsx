@@ -103,7 +103,7 @@ export default function ResizeImageTo50KBPage() {
         <h2>Other image resizing tools</h2>
         <ul>
           <li><Link href="/resize-image-to-20kb" style={linkStyle}>Resize an image to 20KB</Link></li>
-          <li><Link href="/#tools" style={linkStyle}>Resize an image to 100KB</Link></li>
+          <li><Link href="/resize-image-to-100kb" style={linkStyle}>Read the guide to resize an image to 100KB</Link></li>
           <li><Link href="/#tools" style={linkStyle}>Choose a custom KB limit</Link></li>
           <li><Link href="/guides" style={linkStyle}>Read image resizing guides and FAQs</Link></li>
         </ul>
