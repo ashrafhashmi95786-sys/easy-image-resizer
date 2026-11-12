@@ -60,8 +60,9 @@ export default function ResizeImageTo100KBPage() {
       </section>
 
       <section>
-        <h2>Other image size options</h2>
+        <h2>More free image tools</h2>
         <ul>
+          <li><Link href="/passport-photo-resizer" style={linkStyle}>Create a passport-size photo</Link></li>
           <li><Link href="/resize-image-to-20kb" style={linkStyle}>Resize an image to 20KB</Link></li>
           <li><Link href="/resize-image-to-50kb" style={linkStyle}>Resize an image to 50KB</Link></li>
           <li><Link href="/guides" style={linkStyle}>Read image resizing guides and FAQs</Link></li>
