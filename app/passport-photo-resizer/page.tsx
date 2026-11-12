@@ -68,6 +68,7 @@ export default function PassportPhotoResizerPage() {
       <section>
         <h2>More free image tools</h2>
         <ul>
+          <li><Link href="/signature-resizer" style={linkStyle}>Signature resizer (140 × 60 px preset)</Link></li>
           <li><Link href="/resize-image-to-20kb" style={linkStyle}>Resize an image to 20KB</Link></li>
           <li><Link href="/resize-image-to-50kb" style={linkStyle}>Resize an image to 50KB</Link></li>
           <li><Link href="/resize-image-to-100kb" style={linkStyle}>Resize an image to 100KB</Link></li>
