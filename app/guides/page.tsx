@@ -47,19 +47,19 @@ export default function GuidesPage() {
       <h2>3. JPG or PNG: which format should you use?</h2>
       <p>JPG is commonly useful for photographs because it can create relatively small files. JPG uses lossy compression, so repeated saving or very low quality can introduce visible artefacts.</p>
       <p>PNG is useful for graphics, sharp text, icons and images that need transparency. PNG files can be larger than comparable JPG photographs. Converting a JPG to PNG does not restore detail that was lost in the original JPG.</p>
-      <p>Choose the format requested by the destination website. If no format is specified, consider the image itself: JPG for many photos, PNG for transparent graphics or crisp interface artwork.</p>
+      <p>Choose the format requested by the destination website. If no format is specified, consider the image itself: JPG for many photos, PNG for transparent graphics or crisp interface artwork. To reduce a photo's file size with an adjustable quality setting, try our <Link href="/image-compressor" style={linkStyle}>free online image compressor</Link>.</p>
     </article>
 
     <article>
       <h2>4. Preparing a passport-style photo</h2>
       <p>The Passport photo preset creates a 413 × 531 pixel image using a centered crop. This is a starter size only. Passport, visa, examination and other application rules differ by country and organisation and may specify different dimensions, background colours, face position, expression, lighting or file-size limits.</p>
-      <p>Before submitting, compare the output with the official photo instructions for your application. The preset does not certify that a photo will be accepted, change its background, or verify identity-document requirements.</p>
+      <p>Before submitting, compare the output with the official photo instructions for your application. The preset does not certify that a photo will be accepted, change its background, or verify identity-document requirements. See the <Link href="/passport-photo-resizer" style={linkStyle}>passport photo resizer guide</Link>.</p>
     </article>
 
     <article>
       <h2>5. Resizing a signature image</h2>
       <p>The Signature resize preset creates a 140 × 60 pixel image. This is a basic starting template, not a universal standard. Some forms require a different pixel size, file format, background, ink colour or maximum file size.</p>
-      <p>Use a clear image with enough contrast, check that the full signature remains visible in the preview, and verify the receiving organisation's instructions before uploading. Do not use this tool to imitate or alter another person's signature.</p>
+      <p>Use a clear image with enough contrast, check that the full signature remains visible in the preview, and verify the receiving organisation's instructions before uploading. Do not use this tool to imitate or alter another person's signature. Read the <Link href="/signature-resizer" style={linkStyle}>signature resizer guide</Link> for details.</p>
     </article>
 
     <article>
