@@ -17,9 +17,49 @@ export const metadata: Metadata = {
 
 const linkStyle = { color: "#176b50", fontWeight: 700 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {
+    "@type": "Question",
+    "name": "Is this 100KB image resizer free?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The tool is currently free to use and does not require an account."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Can I resize an image to 100KB on my phone?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Open the website in a modern mobile browser, choose a photo and process it. Check the downloaded file before uploading it to another app."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "Will the output be exactly 100KB?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The target is a maximum file size. The final image may be smaller than 100KB depending on its content and compression result."
+    }
+  },
+  {
+    "@type": "Question",
+    "name": "What if my image cannot reach 100KB?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Try a smaller source image or reduce its dimensions. If the receiving form permits it, choose a higher file-size limit instead of making the image too unclear."
+    }
+  }
+],
+};
+
 export default function ResizeImageTo100KBPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
