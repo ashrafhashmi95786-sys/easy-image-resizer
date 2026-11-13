@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://easy-image-resizer-seven.vercel.app";
 
 export const metadata: Metadata = {
-  title: "Image Compressor Online Free – Reduce Photo File Size",
+  title: "Free Online Image Compressor",
   description: "Compress JPG, PNG and WebP images online for free. Adjust image quality, preview the result and download it in your browser without sign-up.",
   alternates: { canonical: `${siteUrl}/image-compressor` },
   openGraph: {
