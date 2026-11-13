@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://easy-image-resizer-seven.vercel.app";
 
 export const metadata: Metadata = {
-  title: "Passport Photo Resizer Online Free (35×45 mm)",
+  title: "Passport Photo Resizer (35×45 mm)",
   description: "Create a passport-size photo preset online for free. Resize your photo to 413×531 pixels, preview it and download it in your browser.",
   alternates: { canonical: `${siteUrl}/passport-photo-resizer` },
   openGraph: {
