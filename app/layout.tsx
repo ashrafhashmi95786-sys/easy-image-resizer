@@ -4,6 +4,7 @@ import "./globals.css";
 
 const siteUrl = "https://easy-image-resizer-seven.vercel.app";
 const googleAnalyticsId = "G-7TQEJWK2S2";
+const googleAdsenseId = "ca-pub-3619322932821521";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -15,13 +16,20 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   verification: { google: "WmwD7ZOSJjsqZT0z72r0EuQrq-_WSJPm6mFlJf5Fx0o" },
   other: {
-    "google-adsense-account": "ca-pub-3619322932821521",
+    "google-adsense-account": googleAdsenseId,
   },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <Script
+        id="google-adsense"
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${googleAdsenseId}`}
+        async
+        crossOrigin="anonymous"
+        strategy="beforeInteractive"
+      />
       <body>
         {children}
         <Script
