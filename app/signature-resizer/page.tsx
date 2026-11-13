@@ -4,7 +4,7 @@ import Link from "next/link";
 const siteUrl = "https://easy-image-resizer-seven.vercel.app";
 
 export const metadata: Metadata = {
-  title: "Signature Resizer Online Free – Resize to 140×60 Pixels",
+  title: "Signature Resizer (140×60 Pixels)",
   description: "Resize a signature image online for free with a 140×60 pixel starter preset. Preview and download your image directly in your browser.",
   alternates: { canonical: `${siteUrl}/signature-resizer` },
   openGraph: {
