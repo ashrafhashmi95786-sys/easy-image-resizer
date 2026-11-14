@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+
 export const metadata: Metadata = {
   title: "Image Resizing Guides & FAQs",
   description: "Practical guides for resizing images to 20KB, 50KB or 100KB, choosing dimensions, compressing photos and preparing passport photos or signatures.",
+  alternates: { canonical: `${siteUrl}/guides` },
 };
 
 const linkStyle = { color: "#176b50", fontWeight: 700 };
