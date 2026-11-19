@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
   return <main style={{maxWidth:760,margin:"0 auto",padding:"64px 24px",lineHeight:1.75}}>
     <Link href="/" style={{color:"#176b50"}}>← Back to Easy Image Resizer Tools</Link>
     <h1 style={{fontSize:38,marginTop:28}}>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> November 11, 2026</p>
+    <p><strong>Last updated:</strong> November 20, 2026</p>
     <p>This policy explains what information may be handled when you visit or contact Easy Image Resizer Tools.</p>
 
     <h2>Images you process</h2>
