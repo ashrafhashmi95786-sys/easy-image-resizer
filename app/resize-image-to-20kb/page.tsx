@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Resize Image to 20KB Online Free",
   description: "Reduce a JPG, PNG or WebP photo to 20KB in your browser. Free image size reducer with preview and download. No sign-up and no intentional image upload.",
   alternates: { canonical: `${siteUrl}/resize-image-to-20kb` },
   openGraph: {
-    title: "Resize Image to 20KB Online Free | Easy Image Resizer",
+    title: "Resize Image to 20KB Online Free | Easy Image Resizer Tools",
     description: "Make an image smaller than 20KB with a free browser-based photo resizer.",
     url: `${siteUrl}/resize-image-to-20kb`,
     type: "article",
@@ -60,11 +60,11 @@ export default function ResizeImageTo20KBPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
+      <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 20KB Online</h1>
-        <p>Need to upload a photo with a 20KB file-size limit? Use the free Easy Image Resizer tool to reduce a JPG, PNG or WebP image in your browser, check the result and download it.</p>
+        <p>Need to upload a photo with a 20KB file-size limit? Use the free Easy Image Resizer Tools tool to reduce a JPG, PNG or WebP image in your browser, check the result and download it.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Photo to 20KB tool →</Link></p>
       </header>
 
@@ -91,7 +91,7 @@ export default function ResizeImageTo20KBPage() {
 
       <section>
         <h2>Is it safe to resize a photo here?</h2>
-        <p>Image selection and processing happen in your browser. Easy Image Resizer does not intentionally upload the selected image to its application servers. Avoid using a shared device for confidential photos, and read the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for details about website data.</p>
+        <p>Image selection and processing happen in your browser. Easy Image Resizer Tools does not intentionally upload the selected image to its application servers. Avoid using a shared device for confidential photos, and read the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for details about website data.</p>
       </section>
 
       <section>
