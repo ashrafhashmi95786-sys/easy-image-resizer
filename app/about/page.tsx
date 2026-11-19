@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://easyimageresizertools.com/about" },
+  openGraph: { type: "website", url: "https://easyimageresizertools.com/about", siteName: "Easy Image Resizer Tools" },
   title: "About Us",
   description: "Learn about Easy Image Resizer Tools, a free browser-based toolkit for resizing, compressing and converting images.",
 };
