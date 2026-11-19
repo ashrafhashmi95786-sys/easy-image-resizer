@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Passport Photo Resizer (35×45 mm)",
   description: "Create a passport-size photo preset online for free. Resize your photo to 413×531 pixels, preview it and download it in your browser.",
   alternates: { canonical: `${siteUrl}/passport-photo-resizer` },
   openGraph: {
-    title: "Passport Photo Resizer Online Free | Easy Image Resizer",
+    title: "Passport Photo Resizer Online Free | Easy Image Resizer Tools",
     description: "Resize a photo with a 413×531 pixel passport-size preset using a free browser-based image tool.",
     url: `${siteUrl}/passport-photo-resizer`,
     type: "article",
@@ -20,7 +20,7 @@ const linkStyle = { color: "#176b50", fontWeight: 700 };
 export default function PassportPhotoResizerPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
-      <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
+      <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE PHOTO TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Passport Size Photo Resizer Online</h1>
@@ -31,7 +31,7 @@ export default function PassportPhotoResizerPage() {
       <section>
         <h2>How to make a passport-size photo</h2>
         <ol>
-          <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer workspace</Link>.</li>
+          <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer Tools workspace</Link>.</li>
           <li>Select <strong>Passport photo</strong> from the image tools.</li>
           <li>Choose a JPG, PNG or WebP image from your device (up to 20MB).</li>
           <li>Preview the selected photo and press <strong>Process image</strong>.</li>
