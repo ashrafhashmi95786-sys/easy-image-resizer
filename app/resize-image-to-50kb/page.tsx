@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Resize Image to 50KB Online Free",
   description: "Resize a JPG, PNG or WebP photo to a maximum of 50KB online for free. Preview and download your image in your browser with no sign-up.",
   alternates: { canonical: `${siteUrl}/resize-image-to-50kb` },
   openGraph: {
-    title: "Resize Image to 50KB Online Free | Easy Image Resizer",
+    title: "Resize Image to 50KB Online Free | Easy Image Resizer Tools",
     description: "Reduce an image to 50KB with a free browser-based photo resizer.",
     url: `${siteUrl}/resize-image-to-50kb`,
     type: "article",
@@ -60,18 +60,18 @@ export default function ResizeImageTo50KBPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
+      <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 50KB Online</h1>
-        <p>Need a photo under a 50KB upload limit? Use Easy Image Resizer to reduce a JPG, PNG or WebP image in your browser, review the result and download it for your form, application or website.</p>
+        <p>Need a photo under a 50KB upload limit? Use Easy Image Resizer Tools to reduce a JPG, PNG or WebP image in your browser, review the result and download it for your form, application or website.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Photo to 50KB tool →</Link></p>
       </header>
 
       <section>
         <h2>How to reduce an image to 50KB</h2>
         <ol>
-          <li>Open the <Link href="/#tools" style={linkStyle}>image workspace</Link> on Easy Image Resizer.</li>
+          <li>Open the <Link href="/#tools" style={linkStyle}>image workspace</Link> on Easy Image Resizer Tools.</li>
           <li>Select <strong>Photo to 50KB</strong>.</li>
           <li>Choose a JPG, PNG or WebP image from your device. The current maximum input size is 20MB.</li>
           <li>Select <strong>Process image</strong> and wait for the preview.</li>
@@ -91,12 +91,12 @@ export default function ResizeImageTo50KBPage() {
 
       <section>
         <h2>Can I use this 50KB image resizer on my phone?</h2>
-        <p>Yes. Open Easy Image Resizer in a modern mobile browser, choose a photo from your device, process it and download the result. Check the saved file before uploading it to another app or website.</p>
+        <p>Yes. Open Easy Image Resizer Tools in a modern mobile browser, choose a photo from your device, process it and download the result. Check the saved file before uploading it to another app or website.</p>
       </section>
 
       <section>
         <h2>Is it private to resize an image here?</h2>
-        <p>Image selection and processing happen in your browser. Easy Image Resizer does not intentionally upload the selected image to its application servers. Avoid processing confidential photos on shared devices, and read the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for website data details.</p>
+        <p>Image selection and processing happen in your browser. Easy Image Resizer Tools does not intentionally upload the selected image to its application servers. Avoid processing confidential photos on shared devices, and read the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for website data details.</p>
       </section>
 
       <section>

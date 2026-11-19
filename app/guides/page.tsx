@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Image Resizing Guides & FAQs",
@@ -13,7 +13,7 @@ const linkStyle = { color: "#176b50", fontWeight: 700 };
 
 export default function GuidesPage() {
   return <main style={{maxWidth:820,margin:"0 auto",padding:"48px 24px 72px",lineHeight:1.8,color:"#202923"}}>
-    <Link href="/" style={linkStyle}>← Back to Easy Image Resizer</Link>
+    <Link href="/" style={linkStyle}>← Back to Easy Image Resizer Tools</Link>
     <header style={{margin:"32px 0"}}>
       <p style={{color:"#176b50",fontWeight:700,letterSpacing:2,fontSize:12}}>IMAGE HELP CENTRE</p>
       <h1 style={{fontSize:40,lineHeight:1.15}}>Practical image resizing guides</h1>
@@ -43,7 +43,7 @@ export default function GuidesPage() {
         <li>Use Quick crop when you need a common ratio such as 1:1, 4:3, 3:4, 16:9 or 9:16.</li>
         <li>Check the final preview because a centered crop may remove content near the edges.</li>
       </ul>
-      <p>Easy Image Resizer currently applies a centered crop; it does not provide a draggable crop-position selector. If the subject is near an edge, choose a different source image or crop it in an editor that allows manual positioning.</p>
+      <p>Easy Image Resizer Tools currently applies a centered crop; it does not provide a draggable crop-position selector. If the subject is near an edge, choose a different source image or crop it in an editor that allows manual positioning.</p>
     </article>
 
     <article>
@@ -73,7 +73,7 @@ export default function GuidesPage() {
 
     <section style={{marginTop:44,paddingTop:24,borderTop:"1px solid #dce5df"}}>
       <h2>Frequently asked questions</h2>
-      <h3>Is Easy Image Resizer free?</h3>
+      <h3>Is Easy Image Resizer Tools free?</h3>
       <p>Yes. The image tools are currently available to use without creating an account or paying a fee. Internet access may be needed to open the website.</p>
       <h3>Are my photos uploaded?</h3>
       <p>The image processing in this tool runs in your browser. The app does not intentionally send selected image files to its application servers. See the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for hosting-related details.</p>

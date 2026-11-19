@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Easy Image Resizer",
-  description: "Email Easy Image Resizer support with questions, feedback, or a report about an image tool.",
+  title: "Contact Easy Image Resizer Tools",
+  description: "Email Easy Image Resizer Tools support with questions, feedback, or a report about an image tool.",
 };
 
 const gmailComposeUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=supportash01@gmail.com&su=Easy%20Image%20Resizer%20Support";
 
 export default function ContactPage() {
   return <main style={{maxWidth:760,margin:"0 auto",padding:"64px 24px",lineHeight:1.75}}>
-    <Link href="/" style={{color:"#176b50"}}>← Back to Easy Image Resizer</Link>
+    <Link href="/" style={{color:"#176b50"}}>← Back to Easy Image Resizer Tools</Link>
     <h1 style={{fontSize:38,marginTop:28}}>Contact & Feedback</h1>
-    <p>Need help with Easy Image Resizer, or noticed something that could work better? Email our support team with your question, suggestion or issue report. Feedback helps us identify confusing instructions, browser compatibility problems and improvements to the image tools.</p>
+    <p>Need help with Easy Image Resizer Tools, or noticed something that could work better? Email our support team with your question, suggestion or issue report. Feedback helps us identify confusing instructions, browser compatibility problems and improvements to the image tools.</p>
     <h2>Email support</h2>
     <p>Use the link below to open a new Gmail message addressed to our support inbox. You can also write to <a href="mailto:supportash01@gmail.com" style={{color:"#176b50",fontWeight:700}}>supportash01@gmail.com</a>.</p>
     <p><a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",background:"#176b50",color:"#fff",fontWeight:700,padding:"12px 20px",borderRadius:8,textDecoration:"none"}}>Send us a message</a></p>
