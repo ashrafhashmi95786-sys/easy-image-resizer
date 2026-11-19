@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Resize Image to 100KB Online Free",
   description: "Resize a JPG, PNG or WebP photo to a maximum of 100KB online for free. Preview and download your image in your browser with no sign-up.",
   alternates: { canonical: `${siteUrl}/resize-image-to-100kb` },
   openGraph: {
-    title: "Resize Image to 100KB Online Free | Easy Image Resizer",
+    title: "Resize Image to 100KB Online Free | Easy Image Resizer Tools",
     description: "Reduce an image to a maximum of 100KB with a free browser-based photo resizer.",
     url: `${siteUrl}/resize-image-to-100kb`,
     type: "article",
@@ -60,18 +60,18 @@ export default function ResizeImageTo100KBPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
+      <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 100KB Online</h1>
-        <p>Need a photo under a 100KB upload limit? Use Easy Image Resizer to reduce a JPG, PNG or WebP image in your browser, review the result and download it for a form, application, website or email.</p>
+        <p>Need a photo under a 100KB upload limit? Use Easy Image Resizer Tools to reduce a JPG, PNG or WebP image in your browser, review the result and download it for a form, application, website or email.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Photo to 100KB tool →</Link></p>
       </header>
 
       <section>
         <h2>How to reduce an image to 100KB</h2>
         <ol>
-          <li>Open the <Link href="/#tools" style={linkStyle}>image workspace</Link> on Easy Image Resizer.</li>
+          <li>Open the <Link href="/#tools" style={linkStyle}>image workspace</Link> on Easy Image Resizer Tools.</li>
           <li>Select <strong>Photo to 100KB</strong>.</li>
           <li>Choose a JPG, PNG or WebP image from your device. The current maximum input size is 20MB.</li>
           <li>Select <strong>Process image</strong> and wait for the output preview.</li>
@@ -96,7 +96,7 @@ export default function ResizeImageTo100KBPage() {
 
       <section>
         <h2>Is it safe to resize a photo here?</h2>
-        <p>Image selection and processing happen in your browser. Easy Image Resizer does not intentionally upload the selected image to its application servers. Avoid using a shared device for confidential photos, and read the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for details about website data.</p>
+        <p>Image selection and processing happen in your browser. Easy Image Resizer Tools does not intentionally upload the selected image to its application servers. Avoid using a shared device for confidential photos, and read the <Link href="/privacy-policy" style={linkStyle}>Privacy Policy</Link> for details about website data.</p>
       </section>
 
       <section>
