@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Free Online Image Compressor",
   description: "Compress JPG, PNG and WebP images online for free. Adjust image quality, preview the result and download it in your browser without sign-up.",
   alternates: { canonical: `${siteUrl}/image-compressor` },
   openGraph: {
-    title: "Image Compressor Online Free | Easy Image Resizer",
+    title: "Image Compressor Online Free | Easy Image Resizer Tools",
     description: "Reduce photo file size with an adjustable quality setting and local browser processing.",
     url: `${siteUrl}/image-compressor`,
     type: "article",
@@ -20,7 +20,7 @@ const linkStyle = { color: "#176b50", fontWeight: 700 };
 export default function ImageCompressorPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
-      <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
+      <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Image Compressor Online</h1>
@@ -30,7 +30,7 @@ export default function ImageCompressorPage() {
       <section>
         <h2>How to compress an image online</h2>
         <ol>
-          <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer workspace</Link>.</li>
+          <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer Tools workspace</Link>.</li>
           <li>Select <strong>Image compressor</strong>.</li>
           <li>Choose a JPG, PNG or WebP image from your device. The current input limit is 20MB.</li>
           <li>Adjust the image quality slider. A lower setting can reduce file size but may make details less clear.</li>
