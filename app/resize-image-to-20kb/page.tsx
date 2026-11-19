@@ -64,7 +64,7 @@ export default function ResizeImageTo20KBPage() {
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 20KB Online</h1>
-        <p>Need to upload a photo with a 20KB file-size limit? Use the free Easy Image Resizer Tools tool to reduce a JPG, PNG or WebP image in your browser, check the result and download it.</p>
+        <p>Need to upload a photo with a 20KB file-size limit? Use Easy Image Resizer Tools to reduce a JPG, PNG or WebP image in your browser, check the result and download it.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Photo to 20KB tool →</Link></p>
       </header>
 
