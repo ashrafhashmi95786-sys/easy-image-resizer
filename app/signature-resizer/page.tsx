@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const siteUrl = "https://easy-image-resizer-seven.vercel.app";
+const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
   title: "Signature Resizer (140×60 Pixels)",
   description: "Resize a signature image online for free with a 140×60 pixel starter preset. Preview and download your image directly in your browser.",
   alternates: { canonical: `${siteUrl}/signature-resizer` },
   openGraph: {
-    title: "Signature Resizer Online Free | Easy Image Resizer",
+    title: "Signature Resizer Online Free | Easy Image Resizer Tools",
     description: "Use a free 140×60 pixel signature resize preset. Process your image in your browser without an account.",
     url: `${siteUrl}/signature-resizer`,
     type: "article",
@@ -20,7 +20,7 @@ const linkStyle = { color: "#176b50", fontWeight: 700 };
 export default function SignatureResizerPage() {
   return (
     <main style={{ maxWidth: 820, margin: "0 auto", padding: "40px 24px 72px", lineHeight: 1.8, color: "#202923" }}>
-      <Link href="/" style={linkStyle}>← Easy Image Resizer home</Link>
+      <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Signature Resizer Online</h1>
@@ -30,7 +30,7 @@ export default function SignatureResizerPage() {
       <section>
         <h2>How to resize a signature image</h2>
         <ol>
-          <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer workspace</Link>.</li>
+          <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer Tools workspace</Link>.</li>
           <li>Select <strong>Signature resize</strong> from the available tools.</li>
           <li>Choose your signature image in JPG, PNG or WebP format (up to 20MB).</li>
           <li>Preview the image and select <strong>Process image</strong>.</li>
