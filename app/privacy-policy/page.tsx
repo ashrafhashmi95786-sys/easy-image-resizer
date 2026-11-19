@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://easyimageresizertools.com/privacy-policy" },
+  openGraph: { type: "website", url: "https://easyimageresizertools.com/privacy-policy", siteName: "Easy Image Resizer Tools" },
   title: "Privacy Policy",
   description: "Privacy information for Easy Image Resizer Tools, including browser-based image processing, hosting, analytics, support email, cookies and advertising.",
 };
