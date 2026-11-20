@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { getCropFrameGeometry } = require("../lib/crop-geometry.cjs");
+const { getCropFrameGeometry } = require("../lib/crop-geometry.js");
 
 test("portrait source fits square crop within image bounds", () => {
   const g = getCropFrameGeometry(600, 1200, 1, 0.8);
