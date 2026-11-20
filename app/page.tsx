@@ -4,7 +4,8 @@ async function encodeCanvas(canvas: HTMLCanvasElement, mime: string, quality: nu
 type Tool = "20" | "50" | "100" | "custom" | "compress" | "passport" | "signature" | "dimensions" | "crop" | "jpg" | "png";
 export default function Home() {
  const [file,setFile]=useState<File|null>(null),[preview,setPreview]=useState(""),[tool,setTool]=useState<Tool>("50"),[target,setTarget]=useState(50),[width,setWidth]=useState(600),[height,setHeight]=useState(600),[cropRatio,setCropRatio]=useState("1:1"),[quality,setQuality]=useState(85),[cropPosition,setCropPosition]=useState({x:0.5,y:0.5}),[cropImageSize,setCropImageSize]=useState({width:0,height:0}),[busy,setBusy]=useState(false),[result,setResult]=useState(""),[error,setError]=useState(""),[outUrl,setOutUrl]=useState("");
- const input=useRef<HTMLInputElement>(null);\n const cropDrag=useRef<{pointerId:number,startX:number,startY:number,x:number,y:number}|null>(null);
+ const input=useRef<HTMLInputElement>(null);
+ const cropDrag=useRef<{pointerId:number,startX:number,startY:number,x:number,y:number}|null>(null);
  useEffect(()=>()=>{if(preview)URL.revokeObjectURL(preview)},[preview]);
  useEffect(()=>()=>{if(outUrl)URL.revokeObjectURL(outUrl)},[outUrl]);
  function choose(f?:File){if(!f)return;setError("");setResult("");if(outUrl)URL.revokeObjectURL(outUrl);setOutUrl("");if(!["image/jpeg","image/png","image/webp"].includes(f.type)){setFile(null);setPreview("");setError("Please choose a JPG, PNG or WebP image.");return}if(f.size>20*1024*1024){setFile(null);setPreview("");setError("Image is larger than 20MB. Please choose a smaller file.");return}if(preview)URL.revokeObjectURL(preview);setFile(f);setCropPosition({x:0.5,y:0.5});setCropImageSize({width:0,height:0});setPreview(URL.createObjectURL(f));}
