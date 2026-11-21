@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const SUPPORT_EMAIL = "supportash01@gmail.com";
-const EMAIL_PATTERN = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_REQUEST_BYTES = 12 * 1024;
 
 export async function POST(request: NextRequest) {
   try {
-    // The browser contact form is same-origin only. Reject cross-site submissions.
+    // Accept requests only from this exact site origin.
     const origin = request.headers.get("origin");
     if (!origin) {
       return NextResponse.json({ error: "Invalid request origin." }, { status: 403 });
@@ -23,18 +23,49 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid request origin." }, { status: 403 });
     }
 
-    if (!request.headers.get("content-type")?.toLowerCase().includes("application/json")) {
+    const contentType = request.headers.get("content-type") ?? "";
+    if (!/^application\/json(?:\s*;|$)/i.test(contentType)) {
       return NextResponse.json({ error: "Content-Type must be application/json." }, { status: 415 });
     }
 
-    const contentLength = Number(request.headers.get("content-length") ?? "0");
-    if (Number.isFinite(contentLength) && contentLength > MAX_REQUEST_BYTES) {
-      return NextResponse.json({ error: "Request is too large." }, { status: 413 });
+    const contentLengthHeader = request.headers.get("content-length");
+    if (contentLengthHeader !== null) {
+      const contentLength = Number(contentLengthHeader);
+      if (!Number.isSafeInteger(contentLength) || contentLength < 0 || contentLength > MAX_REQUEST_BYTES) {
+        return NextResponse.json({ error: "Request is too large or has an invalid length." }, { status: 413 });
+      }
+    }
+
+    // Enforce the limit while reading, including requests without Content-Length.
+    if (!request.body) {
+      return NextResponse.json({ error: "Request body is required." }, { status: 400 });
+    }
+
+    const reader = request.body.getReader();
+    const chunks: Uint8Array[] = [];
+    let totalBytes = 0;
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      totalBytes += value.byteLength;
+      if (totalBytes > MAX_REQUEST_BYTES) {
+        await reader.cancel();
+        return NextResponse.json({ error: "Request is too large." }, { status: 413 });
+      }
+      chunks.push(value);
+    }
+
+    const bodyBytes = new Uint8Array(totalBytes);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bodyBytes.set(chunk, offset);
+      offset += chunk.byteLength;
     }
 
     let body: unknown;
     try {
-      body = await request.json();
+      body = JSON.parse(new TextDecoder().decode(bodyBytes));
     } catch {
       return NextResponse.json({ error: "Invalid JSON request." }, { status: 400 });
     }
@@ -72,15 +103,15 @@ export async function POST(request: NextRequest) {
     const emailResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
+        Authorization: "Bearer " + apiKey,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         from,
         to: [SUPPORT_EMAIL],
         reply_to: email,
-        subject: `Website message from ${name}`,
-        text: `New message from Easy Image Resizer Tools contact form\\n\\nName: ${name}\\nEmail: ${email}\\n\\nMessage:\\n${message}`,
+        subject: "Website message from " + name,
+        text: "New message from Easy Image Resizer Tools contact form\n\nName: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message,
       }),
       cache: "no-store",
     });
