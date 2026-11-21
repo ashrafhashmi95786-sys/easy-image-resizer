@@ -41,7 +41,7 @@ export default function GuidesPage() {
         <li>Use Custom dimensions when the destination gives exact width and height values.</li>
         <li>Keep the original aspect ratio when you want to avoid stretching faces, logos or objects.</li>
         <li>Use Quick crop when you need a common ratio such as 1:1, 4:3, 3:4, 16:9 or 9:16.</li>
-        <li>Check the final preview because a centered crop may remove content near the edges.</li>
+        <li>Review the crop preview and make sure no important content is cut off.</li>
       </ul>
       <p>The Quick crop workspace displays a crop frame over your image. Drag inside the frame to reposition the selected area, and use its edge or corner handles to adjust the crop size while keeping the selected aspect ratio. Choose the ratio first, then position the frame so the important subject stays inside it. Review the output preview before downloading.</p>
     </article>
