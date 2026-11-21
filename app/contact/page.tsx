@@ -20,6 +20,8 @@ export default function ContactPage() {
     <p><a href={gmailComposeUrl} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",background:"#176b50",color:"#fff",fontWeight:700,padding:"12px 20px",borderRadius:8,textDecoration:"none"}}>Send us a message</a></p>
     <h2>What to include in a bug report</h2>
     <p>To help us understand a problem, please include the name of the tool, your device and browser, the image format, the steps you followed, and the error message or unexpected result. If possible, explain what you expected the tool to do. Do not include passwords, account credentials or private documents.</p>
+    <h2>What happens after you contact us?</h2>
+    <p>Please describe your question clearly so we can understand what help you need. We review feedback to identify possible corrections and improvements, but we do not publish a guaranteed response time. Do not include passwords, payment details, identity documents or other sensitive personal information in your message.</p>
     <h2>Protect your privacy</h2>
     <p>Image processing is designed to happen locally in your browser, but an email you send is handled by your email provider. Please do not attach passport photos, signatures or other sensitive images to a support request. Read our <Link href="/privacy-policy" style={{color:"#176b50"}}>Privacy Policy</Link> to understand how the website handles information.</p>
     <h2>More about the website</h2>
