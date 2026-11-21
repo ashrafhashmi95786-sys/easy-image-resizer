@@ -2,14 +2,83 @@ import { NextRequest, NextResponse } from "next/server";
 
 const SUPPORT_EMAIL = "supportash01@gmail.com";
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const MAX_REQUEST_BYTES = 12 * 1024;
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const name = typeof body.name === "string" ? body.name.trim() : "";
-    const email = typeof body.email === "string" ? body.email.trim() : "";
-    const message = typeof body.message === "string" ? body.message.trim() : "";
-    const honeypot = typeof body.website === "string" ? body.website : "";
+    // Accept requests only from this exact site origin.
+    const origin = request.headers.get("origin");
+    if (!origin) {
+      return NextResponse.json({ error: "Invalid request origin." }, { status: 403 });
+    }
+
+    let requestOrigin: string;
+    try {
+      requestOrigin = new URL(origin).origin;
+    } catch {
+      return NextResponse.json({ error: "Invalid request origin." }, { status: 403 });
+    }
+
+    if (requestOrigin !== request.nextUrl.origin) {
+      return NextResponse.json({ error: "Invalid request origin." }, { status: 403 });
+    }
+
+    const contentType = request.headers.get("content-type") ?? "";
+    if (!/^application\/json(?:\s*;|$)/i.test(contentType)) {
+      return NextResponse.json({ error: "Content-Type must be application/json." }, { status: 415 });
+    }
+
+    const contentLengthHeader = request.headers.get("content-length");
+    if (contentLengthHeader !== null) {
+      const contentLength = Number(contentLengthHeader);
+      if (!Number.isSafeInteger(contentLength) || contentLength < 0 || contentLength > MAX_REQUEST_BYTES) {
+        return NextResponse.json({ error: "Request is too large or has an invalid length." }, { status: 413 });
+      }
+    }
+
+    // Enforce the limit while reading, including requests without Content-Length.
+    if (!request.body) {
+      return NextResponse.json({ error: "Request body is required." }, { status: 400 });
+    }
+
+    const reader = request.body.getReader();
+    const chunks: Uint8Array[] = [];
+    let totalBytes = 0;
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      totalBytes += value.byteLength;
+      if (totalBytes > MAX_REQUEST_BYTES) {
+        await reader.cancel();
+        return NextResponse.json({ error: "Request is too large." }, { status: 413 });
+      }
+      chunks.push(value);
+    }
+
+    const bodyBytes = new Uint8Array(totalBytes);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bodyBytes.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+
+    let body: unknown;
+    try {
+      body = JSON.parse(new TextDecoder().decode(bodyBytes));
+    } catch {
+      return NextResponse.json({ error: "Invalid JSON request." }, { status: 400 });
+    }
+
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+      return NextResponse.json({ error: "Invalid form submission." }, { status: 400 });
+    }
+
+    const fields = body as Record<string, unknown>;
+    const name = typeof fields.name === "string" ? fields.name.trim() : "";
+    const email = typeof fields.email === "string" ? fields.email.trim() : "";
+    const message = typeof fields.message === "string" ? fields.message.trim() : "";
+    const honeypot = typeof fields.website === "string" ? fields.website : "";
 
     // Quietly accept bot submissions without sending email.
     if (honeypot) return NextResponse.json({ ok: true });
@@ -34,15 +103,15 @@ export async function POST(request: NextRequest) {
     const emailResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
+        Authorization: "Bearer " + apiKey,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         from,
         to: [SUPPORT_EMAIL],
         reply_to: email,
-        subject: `Website message from ${name}`,
-        text: `New message from Easy Image Resizer Tools contact form\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+        subject: "Website message from " + name,
+        text: "New message from Easy Image Resizer Tools contact form\n\nName: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message,
       }),
       cache: "no-store",
     });
