@@ -41,9 +41,9 @@ export default function GuidesPage() {
         <li>Use Custom dimensions when the destination gives exact width and height values.</li>
         <li>Keep the original aspect ratio when you want to avoid stretching faces, logos or objects.</li>
         <li>Use Quick crop when you need a common ratio such as 1:1, 4:3, 3:4, 16:9 or 9:16.</li>
-        <li>Check the final preview because a centered crop may remove content near the edges.</li>
+        <li>Review the crop preview and make sure no important content is cut off.</li>
       </ul>
-      <p>Easy Image Resizer Tools currently applies a centered crop; it does not provide a draggable crop-position selector. If the subject is near an edge, choose a different source image or crop it in an editor that allows manual positioning.</p>
+      <p>The Quick crop workspace displays a crop frame over your image. Drag inside the frame to reposition the selected area, and use its edge or corner handles to adjust the crop size while keeping the selected aspect ratio. Choose the ratio first, then position the frame so the important subject stays inside it. Review the output preview before downloading.</p>
     </article>
 
     <article>
@@ -84,7 +84,7 @@ export default function GuidesPage() {
       <h3>Will a passport photo or signature preset be accepted by every form?</h3>
       <p>No. These are starter dimensions only. Always follow the official requirements for the specific application.</p>
       <h3>Can I crop a specific area of an image?</h3>
-      <p>The current Quick crop tool uses a centered crop and preset aspect ratios. It does not let you drag the crop area to reposition it.</p>
+      <p>Yes. In the Quick crop workspace, drag inside the crop frame to move the selected area. Use the frame handles to resize it, then process the image and check the result preview.</p>
       <h3>What should I do if processing fails?</h3>
       <p>Check that the file is a supported format and under 20MB, try another browser, and avoid closing the tab while processing. If the problem continues, use the <Link href="/contact" style={linkStyle}>Contact & Feedback page</Link> and include the tool name, browser and steps that caused the issue. Do not send private images.</p>
     </section>
