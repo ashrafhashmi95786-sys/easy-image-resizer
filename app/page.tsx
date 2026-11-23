@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { getCropFrameGeometry } from "../lib/crop-geometry";
 import { compressCanvasToMaxBytes } from "../lib/target-size-compression.mjs";
-async function encodeCanvas(canvas: HTMLCanvasElement, mime: string, quality: number): Promise<Blob> { return await new Promise<Blob>((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error("Could not create the output image.")),mime,quality)); }
+async function encodeCanvas(canvas: HTMLCanvasElement, mime: string, quality?: number): Promise<Blob> { return await new Promise<Blob>((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error("Could not create the output image.")),mime,quality)); }
 type Tool = "20" | "50" | "100" | "custom" | "compress" | "passport" | "signature" | "dimensions" | "crop" | "jpg" | "png";
 export default function Home() {
  const [file,setFile]=useState<File|null>(null),[preview,setPreview]=useState(""),[tool,setTool]=useState<Tool>("50"),[target,setTarget]=useState(50),[width,setWidth]=useState(600),[height,setHeight]=useState(600),[cropRatio,setCropRatio]=useState("1:1"),[quality,setQuality]=useState(85),[cropPosition,setCropPosition]=useState({x:0.5,y:0.5}),[cropScale,setCropScale]=useState(0.8),[cropImageSize,setCropImageSize]=useState({width:0,height:0}),[busy,setBusy]=useState(false),[result,setResult]=useState(""),[error,setError]=useState(""),[outUrl,setOutUrl]=useState("");
