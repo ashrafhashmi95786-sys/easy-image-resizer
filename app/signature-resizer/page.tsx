@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
-  title: "Signature Resizer (140×60 Pixels)",
-  description: "Resize a signature image online for free with a 140×60 pixel starter preset. Preview and download your image directly in your browser.",
+  title: "Signature Size Reducer Online | Resize Signature to 20KB",
+  description: "Free online signature size reducer. Resize a signature image to 140×60 pixels and use image-size tools to target 20KB, 50KB or a custom KB limit. Browser-based processing.",
   alternates: { canonical: `${siteUrl}/signature-resizer` },
   openGraph: {
-    title: "Signature Resizer Online Free | Easy Image Resizer Tools",
-    description: "Use a free 140×60 pixel signature resize preset. Process your image in your browser without an account.",
+    title: "Signature Size Reducer Online | Easy Image Resizer Tools",
+    description: "Resize a signature image and explore file-size options including 20KB. Free browser-based tools.",
     url: `${siteUrl}/signature-resizer`,
     type: "article",
   },
@@ -23,8 +23,8 @@ export default function SignatureResizerPage() {
       <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
-        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Signature Resizer Online</h1>
-        <p>Resize a scanned or photographed signature with a simple 140 × 60 pixel starter preset. Preview the result and download it directly from your browser without creating an account.</p>
+        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Signature Size Reducer Online</h1>
+        <p>Resize a scanned or photographed signature with a simple 140 × 60 pixel starter preset. If a form also sets a file-size limit, use our image-size tools to try a 20KB, 50KB or custom target. Preview and download your image in your browser without creating an account.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Signature resize tool →</Link></p>
       </header>
       <section>
@@ -33,13 +33,18 @@ export default function SignatureResizerPage() {
           <li>Open the <Link href="/#tools" style={linkStyle}>Easy Image Resizer Tools workspace</Link>.</li>
           <li>Select <strong>Signature resize</strong> from the available tools.</li>
           <li>Choose your signature image in JPG, PNG or WebP format (up to 20MB).</li>
-          <li>Preview the image and select <strong>Process image</strong>.</li>
+          <li>Preview the result and select <strong>Process image</strong>.</li>
           <li>Check the dimensions and appearance, then download the result.</li>
         </ol>
       </section>
       <section>
+        <h2>Resize a signature to 20KB</h2>
+        <p>Some application forms specify a maximum signature file size, such as 20KB. The required dimensions and file-size limit vary by form, so check the official instructions first. Our <Link href="/resize-image-to-20kb" style={linkStyle}>image resizer to 20KB</Link> can help attempt to reduce an image to a maximum 20KB target; the signature preset and file-size target are separate settings.</p>
+        <p>For other limits, explore <Link href="/resize-image-to-50kb" style={linkStyle}>50KB image resizing</Link> or choose a <Link href="/#tools" style={linkStyle}>custom KB size</Link>.</p>
+      </section>
+      <section>
         <h2>What size does this signature resizer use?</h2>
-        <p>The current starter preset creates an image that is 140 × 60 pixels. This is a general preset only, not a universal signature standard. Government forms, exam portals, banks and other websites may require different pixel dimensions, file formats, file-size limits or background rules. Check the instructions for the exact form before uploading.</p>
+        <p>The current starter preset creates an image that is 140 × 60 pixels. This is a general preset only, not a universal signature standard. Government forms, exam portals, banks and other websites may require different pixel dimensions, file-size limits, formats or background rules. Check the instructions for the exact form before uploading.</p>
       </section>
       <section>
         <h2>Tips for a clear signature image</h2>
@@ -62,19 +67,21 @@ export default function SignatureResizerPage() {
       <section>
         <h2>More free image tools</h2>
         <ul>
-          <li><Link href="/passport-photo-resizer" style={linkStyle}>Passport photo resizer</Link></li>
           <li><Link href="/resize-image-to-20kb" style={linkStyle}>Resize an image to 20KB</Link></li>
           <li><Link href="/resize-image-to-50kb" style={linkStyle}>Resize an image to 50KB</Link></li>
           <li><Link href="/resize-image-to-100kb" style={linkStyle}>Resize an image to 100KB</Link></li>
+          <li><Link href="/passport-photo-resizer" style={linkStyle}>Passport photo resizer</Link></li>
           <li><Link href="/guides" style={linkStyle}>Image resizing guides and FAQs</Link></li>
         </ul>
       </section>
       <section>
         <h2>Frequently asked questions</h2>
-        <h3>Is this signature resizer free?</h3>
+        <h3>Is this signature size reducer free?</h3>
         <p>Yes. It is currently free to use and does not require sign-up.</p>
-        <h3>Can I resize my signature to 140 × 60 pixels?</h3>
+        <h3>Can I resize a signature to 140 × 60 pixels?</h3>
         <p>Yes. Select the Signature resize tool to use the 140 × 60 pixel starter preset. Confirm the required dimensions for your particular application before submitting.</p>
+        <h3>Can I resize my signature image to 20KB?</h3>
+        <p>You can try our <Link href="/resize-image-to-20kb" style={linkStyle}>20KB image resizer</Link> to target a maximum file size. Always confirm the form's dimensions, file-size limit and format rules.</p>
         <h3>Can I use the resized signature for every government form?</h3>
         <p>Not necessarily. Each form may have its own image dimensions, file-size and format requirements. Always follow the official instructions.</p>
         <h3>Does the tool make the signature background transparent?</h3>
