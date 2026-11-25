@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
-  title: "Signature Resizer (140×60 Pixels)",
-  description: "Resize a signature image online for free with a 140×60 pixel starter preset. Preview and download your image directly in your browser.",
+  title: "Signature Size Reducer Online – Resize to 140×60 Pixels",
+  description: "Free online signature size reducer. Resize your scanned signature to 140×60 pixels, preview the result and download it directly in your browser. No signup required.",
   alternates: { canonical: `${siteUrl}/signature-resizer` },
   openGraph: {
-    title: "Signature Resizer Online Free | Easy Image Resizer Tools",
-    description: "Use a free 140×60 pixel signature resize preset. Process your image in your browser without an account.",
+    title: "Signature Size Reducer Online – Resize to 140×60 Pixels | Easy Image Resizer Tools",
+    description: "Free online signature size reducer. Resize your scanned signature to 140×60 pixels, preview the result and download it directly in your browser. No signup required.",
     url: `${siteUrl}/signature-resizer`,
     type: "article",
   },
@@ -23,7 +23,7 @@ export default function SignatureResizerPage() {
       <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
-        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Signature Resizer Online</h1>
+        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Signature Size Reducer – Resize Signature Online</h1>
         <p>Resize a scanned or photographed signature with a simple 140 × 60 pixel starter preset. Preview the result and download it directly from your browser without creating an account.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Signature resize tool →</Link></p>
       </header>
