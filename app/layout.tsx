@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/logo.svg", type: "image/svg+xml" }],
   },
   keywords: ["free online image resizer", "photo compressor", "resize image to 20KB", "resize image to 50KB", "resize image to 100KB", "image compressor online", "passport size photo resizer", "signature size reducer", "JPG to PNG", "PNG to JPG"],
-  openGraph: { type: "website", locale: "en_IN", url: siteUrl, siteName: "Easy Image Resizer Tools", title: "Easy Image Resizer Tools — Free Online Image Tools", description: "Resize and compress images privately in your browser." },
+  openGraph: { type: "website", locale: "en_IN", url: siteUrl, siteName: "Easy Image Resizer Tools", title: "Free Online Image Resizer & Photo Compressor", description: "Resize images to 20KB, 50KB or 100KB online. Compress JPG, PNG and WebP photos, make passport-size pictures and resize signatures free in your browser." },
   robots: { index: true, follow: true },
   verification: {
     google: "WmwD7ZOSJjsqZT0z72r0EuQrq-_WSJPm6mFlJf5Fx0o",
