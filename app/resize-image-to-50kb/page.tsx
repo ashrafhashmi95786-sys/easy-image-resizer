@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
-  title: "Resize Image to 50KB Online Free",
-  description: "Resize a JPG, PNG or WebP photo to a maximum of 50KB online for free. Preview and download your image in your browser with no sign-up.",
+  title: "Resize Image to 50KB Online Free – JPG, PNG & WebP",
+  description: "Free online 50KB image resizer for JPG, PNG and WebP. Reduce your photo to a 50KB maximum, preview the result and download it—no signup needed.",
   alternates: { canonical: `${siteUrl}/resize-image-to-50kb` },
   openGraph: {
-    title: "Resize Image to 50KB Online Free | Easy Image Resizer Tools",
-    description: "Reduce an image to 50KB with a free browser-based photo resizer.",
+    title: "Resize Image to 50KB Online Free – JPG, PNG & WebP | Easy Image Resizer Tools",
+    description: "Reduce JPG, PNG or WebP photos to a 50KB maximum with a free online image resizer.",
     url: `${siteUrl}/resize-image-to-50kb`,
     type: "article",
   },
@@ -63,13 +63,13 @@ export default function ResizeImageTo50KBPage() {
       <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
-        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 50KB Online</h1>
-        <p>Need a photo under a 50KB upload limit? Use Easy Image Resizer Tools to reduce a JPG, PNG or WebP image in your browser, review the result and download it for your form, application or website.</p>
+        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 50KB Online for Free</h1>
+        <p>Need to resize a photo to 50KB for an online form, application or website? Use this free 50KB image resizer for JPG, PNG and WebP files. Process your image, check the final file size and preview its clarity before downloading.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Photo to 50KB tool →</Link></p>
       </header>
 
       <section>
-        <h2>How to reduce an image to 50KB</h2>
+        <h2>How to resize a photo to 50KB online</h2>
         <ol>
           <li>Open the <Link href="/#tools" style={linkStyle}>image workspace</Link> on Easy Image Resizer Tools.</li>
           <li>Select <strong>Photo to 50KB</strong>.</li>
