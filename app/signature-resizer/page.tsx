@@ -52,6 +52,15 @@ export default function SignatureResizerPage() {
         </ul>
       </section>
       <section>
+        <h2>How to prepare a signature for an online form</h2>
+        <p>Start by checking the official upload instructions for the exact pixel width, pixel height, maximum file size, accepted format and background requirements. Use the 140 × 60 pixel signature preset only when those dimensions match the form. After processing, open the downloaded image and verify that the signature is readable and that its dimensions and file size meet the stated limits.</p>
+        <p>Different portals use different specifications. A 140 × 60 pixel image is a convenient starter preset, not a guarantee that a bank, exam portal or government website will accept the file.</p>
+      </section>
+      <section>
+        <h2>What if my signature must be under 20KB?</h2>
+        <p>The Signature resize preset sets the image dimensions to 140 × 60 pixels; it does not set a 20KB file-size limit in the same step. If your form requires both limits, use the signature preset first, then use the <Link href="/resize-image-to-20kb" style={linkStyle}>20KB image resizer</Link> as a separate step. Check the final downloaded file's dimensions and file size again before uploading, because meeting one limit does not automatically guarantee the other.</p>
+      </section>
+      <section>
         <h2>Does this tool remove the background?</h2>
         <p>No. The current signature preset resizes and center-crops the image to 140 × 60 pixels. It does not remove or replace the background, clean ink marks, or verify whether a form will accept the result.</p>
       </section>
