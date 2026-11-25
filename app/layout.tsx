@@ -8,15 +8,15 @@ const googleAdsenseId = "ca-pub-3619322932821521";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Easy Image Resizer Tools — Free Online Image Tools", template: "%s | Easy Image Resizer Tools" },
-  description: "Resize photos to 20KB, 50KB or 100KB, compress images, create passport-size photos, resize signatures and convert JPG/PNG. Free browser-based image tools.",
+  title: { default: "Free Online Image Resizer & Photo Compressor", template: "%s | Easy Image Resizer Tools" },
+  description: "Resize images to 20KB, 50KB or 100KB online. Compress JPG, PNG and WebP photos, make passport-size pictures and resize signatures free in your browser.",
   applicationName: "Easy Image Resizer Tools",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
     shortcut: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     apple: [{ url: "/logo.svg", type: "image/svg+xml" }],
   },
-  keywords: ["image resizer", "photo compressor", "resize image to 20KB", "resize image to 50KB", "passport photo maker", "signature resizer", "JPG to PNG", "PNG to JPG"],
+  keywords: ["free online image resizer", "photo compressor", "resize image to 20KB", "resize image to 50KB", "resize image to 100KB", "image compressor online", "passport size photo resizer", "signature size reducer", "JPG to PNG", "PNG to JPG"],
   openGraph: { type: "website", locale: "en_IN", url: siteUrl, siteName: "Easy Image Resizer Tools", title: "Easy Image Resizer Tools — Free Online Image Tools", description: "Resize and compress images privately in your browser." },
   robots: { index: true, follow: true },
   verification: {
