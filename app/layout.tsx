@@ -11,7 +11,11 @@ export const metadata: Metadata = {
   title: { default: "Easy Image Resizer Tools — Free Online Image Tools", template: "%s | Easy Image Resizer Tools" },
   description: "Resize photos to 20KB, 50KB or 100KB, compress images, create passport-size photos, resize signatures and convert JPG/PNG. Free browser-based image tools.",
   applicationName: "Easy Image Resizer Tools",
-  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }], shortcut: "/favicon.svg", apple: "/logo.svg" },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
+    shortcut: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/logo.svg", type: "image/svg+xml" }],
+  },
   keywords: ["image resizer", "photo compressor", "resize image to 20KB", "resize image to 50KB", "passport photo maker", "signature resizer", "JPG to PNG", "PNG to JPG"],
   openGraph: { type: "website", locale: "en_IN", url: siteUrl, siteName: "Easy Image Resizer Tools", title: "Easy Image Resizer Tools — Free Online Image Tools", description: "Resize and compress images privately in your browser." },
   robots: { index: true, follow: true },
