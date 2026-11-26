@@ -8,6 +8,7 @@ const googleAdsenseId = "ca-pub-3619322932821521";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: { canonical: siteUrl },
   title: { default: "Free Online Image Resizer & Photo Compressor", template: "%s | Easy Image Resizer Tools" },
   description: "Resize images to 20KB, 50KB or 100KB online. Compress JPG, PNG and WebP photos, make passport-size pictures and resize signatures free in your browser.",
   applicationName: "Easy Image Resizer Tools",
