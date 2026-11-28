@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
-  title: "Free Online Image Compressor",
-  description: "Compress JPG, PNG and WebP images online for free. Adjust image quality, preview the result and download it in your browser without sign-up.",
+  title: "Image Compressor Online Free – Compress JPG, PNG & WebP",
+  description: "Compress JPG, PNG and WebP images online for free. Adjust image quality, preview smaller files and download them in your browser with no signup or intentional image upload.",
   alternates: { canonical: `${siteUrl}/image-compressor` },
   openGraph: {
-    title: "Image Compressor Online Free | Easy Image Resizer Tools",
-    description: "Reduce photo file size with an adjustable quality setting and local browser processing.",
+    title: "Image Compressor Online Free – Compress JPG, PNG & WebP | Easy Image Resizer Tools",
+    description: "Compress JPG, PNG and WebP images in your browser. Adjust quality, preview the result and download without signing up.",
     url: `${siteUrl}/image-compressor`,
     type: "article",
   },
@@ -23,10 +23,20 @@ export default function ImageCompressorPage() {
       <Link href="/" style={linkStyle}>← Easy Image Resizer Tools home</Link>
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
-        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Image Compressor Online</h1>
-        <p>Reduce the file size of a photo or image with an adjustable quality setting. Preview the processed image and download it directly from your browser without creating an account.</p>
+        <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Image Compressor Online – Compress JPG, PNG & WebP</h1>
+        <p>Compress JPG, PNG and WebP images online for free with an adjustable quality setting. Preview the smaller image before downloading it directly in your browser. No account or sign-up is required.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Image compressor tool →</Link></p>
       </header>
+      <section>
+        <h2>Why use this free online image compressor?</h2>
+        <ul>
+          <li>Compress JPG, PNG and WebP images with an adjustable quality setting.</li>
+          <li>Preview the processed image before downloading it.</li>
+          <li>Process the selected image locally in your browser; it is not intentionally uploaded to the application servers.</li>
+          <li>Use the tool without creating an account or signing up.</li>
+          <li>Choose a quality level that balances file size and visual detail.</li>
+        </ul>
+      </section>
       <section>
         <h2>How to compress an image online</h2>
         <ol>
@@ -44,7 +54,7 @@ export default function ImageCompressorPage() {
       <section>
         <h2>What quality setting should I choose?</h2>
         <p>Start with a higher quality setting and reduce it gradually if the file is still too large. Compare the original and processed previews before downloading. Photos with faces, fine patterns, small text or sharp edges may show compression artefacts more clearly at lower quality.</p>
-        <p>The quality slider is a visual trade-off, not a guaranteed file-size target. If a form requires a specific maximum such as 20KB, 50KB or 100KB, use the dedicated target-size tool and verify the final output.</p>
+        <p>The quality slider is a visual trade-off, not a guaranteed file-size target. If a form or website requires a specific maximum, use a dedicated target-size tool such as <Link href="/resize-image-to-20kb" style={linkStyle}>20KB</Link>, <Link href="/resize-image-to-50kb" style={linkStyle}>50KB</Link> or <Link href="/resize-image-to-100kb" style={linkStyle}>100KB image resizer</Link>, then verify the downloaded file.</p>
       </section>
       <section>
         <h2>Does compression change image dimensions?</h2>
@@ -52,7 +62,7 @@ export default function ImageCompressorPage() {
       </section>
       <section>
         <h2>Which formats can I compress?</h2>
-        <p>You can choose JPG/JPEG, PNG and WebP files. The current compressor keeps PNG input as PNG; JPG and WebP input are exported as JPG. If you specifically need a different format, use the JPG / PNG conversion tools and check the destination website's accepted formats.</p>
+        <p>You can choose JPG/JPEG, PNG and WebP files. The current compressor keeps PNG input as PNG; JPG and WebP input are exported as JPG. If you need a specific output format, check the destination website's accepted formats before downloading or use an appropriate conversion tool.</p>
       </section>
       <section>
         <h2>Are my images uploaded to a server?</h2>
@@ -71,14 +81,16 @@ export default function ImageCompressorPage() {
       </section>
       <section>
         <h2>Frequently asked questions</h2>
-        <h3>Is this image compressor free?</h3>
+        <h3>Q1. Is this image compressor free?</h3>
         <p>Yes. It is currently free to use and does not require sign-up.</p>
-        <h3>Will it compress an image to an exact KB size?</h3>
-        <p>No. The compressor uses a quality setting rather than an exact KB target. Use the 20KB, 50KB, 100KB or Custom KB tools when you have a file-size limit.</p>
-        <h3>Will my image become blurry?</h3>
+        <h3>Q2. Will it compress an image to an exact KB size?</h3>
+        <p>No. The compressor uses a quality setting rather than an exact KB target. Use the <Link href="/resize-image-to-20kb" style={linkStyle}>20KB</Link>, <Link href="/resize-image-to-50kb" style={linkStyle}>50KB</Link>, <Link href="/resize-image-to-100kb" style={linkStyle}>100KB</Link> or Custom KB tools when you have a file-size limit.</p>
+        <h3>Q3. Will my image become blurry?</h3>
         <p>Lower quality and smaller dimensions can reduce detail. Review the preview and choose a higher quality setting if the result is not clear enough.</p>
-        <h3>Can I compress an image on my phone?</h3>
+        <h3>Q4. Can I compress an image on my phone?</h3>
         <p>Yes. Open the website in a modern mobile browser, select an image and process it. Check the downloaded file before uploading it elsewhere.</p>
+        <h3>Q5. Which image formats does the compressor support?</h3>
+        <p>You can select JPG/JPEG, PNG and WebP images. PNG input stays PNG, while JPG and WebP input are exported as JPG by the current tool.</p>
       </section>
       <p style={{ marginTop: 36 }}><Link href="/#tools" style={linkStyle}>Compress an image now →</Link></p>
     </main>
