@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
-  title: "Resize Image to 50KB Online Free – JPG, PNG & WebP",
-  description: "Resize a JPG, PNG or WebP image to a 50KB maximum online for free. Preview the compressed photo, check its file size and download it in your browser.",
+  title: "Resize Image to 50KB Online Free | Easy Image Resizer Tools",
+  description: "Resize images to 50KB online for free. Compress JPG, PNG and WebP photos with a simple browser-based tool. No signup required.",
   alternates: { canonical: `${siteUrl}/resize-image-to-50kb` },
   openGraph: {
-    title: "Resize Image to 50KB Online Free – JPG, PNG & WebP | Easy Image Resizer Tools",
-    description: "Reduce a JPG, PNG or WebP photo to a 50KB maximum with a free browser-based image resizer.",
+    title: "Resize Image to 50KB Online Free | Easy Image Resizer Tools",
+    description: "Compress JPG, PNG and WebP images to a 50KB maximum with a free browser-based image resizer. No signup required.",
     url: `${siteUrl}/resize-image-to-50kb`,
     type: "article",
   },
