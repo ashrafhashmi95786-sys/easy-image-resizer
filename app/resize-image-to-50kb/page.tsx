@@ -58,9 +58,20 @@ export default function ResizeImageTo50KBPage() {
       <header style={{ margin: "30px 0" }}>
         <p style={{ color: "#176b50", fontWeight: 700, letterSpacing: 2, fontSize: 12 }}>FREE ONLINE IMAGE TOOL</p>
         <h1 style={{ fontSize: 40, lineHeight: 1.15 }}>Resize Image to 50KB Online for Free</h1>
-        <p>Need a photo with a file size of 50KB or less for an online form, application or website? Use this free 50KB image resizer for JPG, PNG and WebP files. Process your image in your browser, check the resulting file size and inspect its clarity before downloading.</p>
+        <p>Need to resize an image to 50KB online for a form, application or website? Use this free 50KB image resizer to reduce JPG, PNG and WebP files to a maximum target of 50KB. Process your image in your browser, check the resulting file size and inspect its clarity before downloading.</p>
         <p><Link href="/#tools" style={linkStyle}>Open the Photo to 50KB tool →</Link></p>
       </header>
+
+      <section>
+        <h2>Why use Easy Image Resizer Tools?</h2>
+        <ul>
+          <li>Free to use, with no account or signup required.</li>
+          <li>Set a maximum target file size of 50KB.</li>
+          <li>Works with JPG, PNG and WebP images.</li>
+          <li>Process images in your browser without intentionally uploading them to our application servers.</li>
+          <li>Preview the result and check its file size before downloading.</li>
+        </ul>
+      </section>
 
       <section>
         <h2>How to resize a photo to 50KB online</h2>
@@ -116,6 +127,7 @@ export default function ResizeImageTo50KBPage() {
         <ul>
           <li><Link href="/resize-image-to-20kb" style={linkStyle}>Resize an image to 20KB</Link></li>
           <li><Link href="/resize-image-to-100kb" style={linkStyle}>Resize an image to 100KB</Link></li>
+          <li><Link href="/image-compressor" style={linkStyle}>Compress an image online</Link></li>
           <li><Link href="/signature-resizer" style={linkStyle}>Resize a signature image</Link></li>
           <li><Link href="/passport-photo-resizer" style={linkStyle}>Resize a passport photo</Link></li>
           <li><Link href="/#tools" style={linkStyle}>Choose a custom KB limit</Link></li>
