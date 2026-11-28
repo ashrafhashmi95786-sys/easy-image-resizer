@@ -137,15 +137,15 @@ export default function ResizeImageTo50KBPage() {
 
       <section>
         <h2>Frequently asked questions</h2>
-        <h3>Is the 50KB image resizer free?</h3>
+        <h3>Q1. Is the 50KB image resizer free?</h3>
         <p>Yes. The image tool is currently free to use and does not require an account.</p>
-        <h3>Will the image be exactly 50KB?</h3>
+        <h3>Q2. Will the image be exactly 50KB?</h3>
         <p>50KB is a maximum target, not a promise of an exact file size. The final size depends on the original image and the compression settings.</p>
-        <h3>Can I resize a JPG, PNG or WebP image?</h3>
+        <h3>Q3. Can I resize a JPG, PNG or WebP image?</h3>
         <p>Yes. The tool accepts JPG, PNG and WebP images. Choose the format required by the website or form where you plan to upload the result.</p>
-        <h3>Will compressing to 50KB reduce image quality?</h3>
+        <h3>Q4. Will compressing to 50KB reduce image quality?</h3>
         <p>Compression can reduce detail, especially for complex photos. Review the preview at a readable size before using the downloaded image.</p>
-        <h3>What if my image does not reach 50KB?</h3>
+        <h3>Q5. What if my image does not reach 50KB?</h3>
         <p>Try a smaller source image, reduce its dimensions, or choose a higher file-size limit if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity.</p>
       </section>
 
