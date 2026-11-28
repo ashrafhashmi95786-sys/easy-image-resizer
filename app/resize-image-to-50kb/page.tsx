@@ -134,7 +134,7 @@ export default function ResizeImageTo50KBPage() {
         <h3>Will compressing to 50KB reduce image quality?</h3>
         <p>Compression can reduce detail, especially for complex photos. Review the preview at a readable size before using the downloaded image.</p>
         <h3>What if my image does not reach 50KB?</h3>
-        <p>Try a smaller source image, reduce its dimensions, or choose a higher target size if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity.</p>
+        <p>Try a smaller source image, reduce its dimensions, or choose a higher file-size limit if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity.</p>
       </section>
 
       <p style={{ marginTop: 36 }}><Link href="/#tools" style={linkStyle}>Resize your image to 50KB now →</Link></p>
