@@ -44,7 +44,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "What if my image does not reach 50KB?",
-      acceptedAnswer: { "@type": "Answer", text: "Try a smaller source image, reduce its dimensions, or choose a higher target size if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity." }
+      acceptedAnswer: { "@type": "Answer", text: "Try a smaller source image, reduce its dimensions, or choose a higher file-size limit if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity." }
     }
   ],
 };
