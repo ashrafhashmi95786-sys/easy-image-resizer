@@ -4,12 +4,12 @@ import Link from "next/link";
 const siteUrl = "https://easyimageresizertools.com";
 
 export const metadata: Metadata = {
-  title: "Resize Image to 50KB Online Free – JPG, PNG & WebP",
-  description: "Resize a JPG, PNG or WebP image to a 50KB maximum online for free. Preview the compressed photo, check its file size and download it in your browser.",
+  title: "Resize Image to 50KB Online Free | Easy Image Resizer Tools",
+  description: "Resize images to 50KB online for free. Compress JPG, PNG and WebP photos with a simple browser-based tool. No signup required.",
   alternates: { canonical: `${siteUrl}/resize-image-to-50kb` },
   openGraph: {
-    title: "Resize Image to 50KB Online Free – JPG, PNG & WebP | Easy Image Resizer Tools",
-    description: "Reduce a JPG, PNG or WebP photo to a 50KB maximum with a free browser-based image resizer.",
+    title: "Resize Image to 50KB Online Free | Easy Image Resizer Tools",
+    description: "Compress JPG, PNG and WebP images to a 50KB maximum with a free browser-based image resizer. No signup required.",
     url: `${siteUrl}/resize-image-to-50kb`,
     type: "article",
   },
@@ -134,7 +134,7 @@ export default function ResizeImageTo50KBPage() {
         <h3>Will compressing to 50KB reduce image quality?</h3>
         <p>Compression can reduce detail, especially for complex photos. Review the preview at a readable size before using the downloaded image.</p>
         <h3>What if my image does not reach 50KB?</h3>
-        <p>Try a smaller source image, reduce its dimensions, or choose a higher file-size limit if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity.</p>
+        <p>Try a smaller source image, reduce its dimensions, or choose a higher target size if the receiving website permits it. Some images cannot reach a very small file size while preserving acceptable clarity.</p>
       </section>
 
       <p style={{ marginTop: 36 }}><Link href="/#tools" style={linkStyle}>Resize your image to 50KB now →</Link></p>
